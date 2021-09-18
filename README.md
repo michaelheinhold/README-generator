@@ -19,6 +19,9 @@
 
   ## Usage
   Once you have everything installed, open your terminal and run 'node index' follow the question prompts and answer everything accurately. Once you finish look for the folder labeled 'dist' and you will find your generated README! From there you can move it to your projects folder, and add or remove things from the file created to suit your needs.
+  
+  ### Screenshots and Recordings
+  ![Screenshot (11)_LI](https://user-images.githubusercontent.com/86388353/133896079-3ac2668f-4107-4e5e-91b5-5925728e5bb3.jpg)
 
   ## License
   This application is licensed under the [MIT](https://spdx.org/licenses/MIT.html) license.
