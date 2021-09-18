@@ -24,35 +24,23 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'installConfirm',
-        message: 'Would you like to add installation instructions?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'installation',
         message: 'Describe the installation proccess.',
-        when: ({installConfirm})=> {
-            if (installConfirm){
+        validate: installInput => {
+            if (installInput) {
                 return true;
             } else {
                 return false;
             }
         }
-    },
-    {
-        type: 'confirm',
-        name: 'usageConfirm',
-        message: 'Would you like to add usage instructions?',
-        default: true
     },
     {
         type: 'input',
         name: 'usage',
         message: 'Describe how to use your project.',
-        when: ({usageConfirm})=> {
-            if (usageConfirm){
+        validate: usageInput => {
+            if (usageInput) {
                 return true;
             } else {
                 return false;
@@ -60,17 +48,17 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'contributeConfirm',
-        message: 'Would you like to add contributution guidelines?',
-        default: true
+        type: 'list',
+        name: 'license',
+        message: 'Which license would you like to choose for your project?',
+        choices: ['GNU GPLv3', 'MIT', 'Apache 2.0'],
     },
     {
         type: 'input',
         name: 'contribution',
         message: 'Explain the contribution guidelines you would like people to follow.',
-        when: ({contributeConfirm})=> {
-            if (contributeConfirm){
+        validate: contrinput => {
+            if (contrinput) {
                 return true;
             } else {
                 return false;
@@ -78,17 +66,11 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'testConfirm',
-        message: 'Would you like to add testing instructions?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'testing',
         message: 'Describe the testing proccess.',
-        when: ({testConfirm})=> {
-            if (testConfirm){
+        validate: testinginput => {
+            if (testinginput) {
                 return true;
             } else {
                 return false;
