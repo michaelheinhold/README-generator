@@ -1,5 +1,5 @@
 
-  [!['License: MIT']('https://img.shields.io/badge/License-MIT-yellow.svg')]('https://opensource.org/licenses/MIT')
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   # README Generator
   ## Description
   Using Node in the terminal, answer a series of questions to have a README for your project automatically created for you. Letting you focus more on getting your project working, and not having to stress about getting a good README up and running.
