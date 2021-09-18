@@ -7,6 +7,7 @@ const questions = [
             if (titleInput){
                 return true;
             } else {
+                console.log('Please enter a title for your project!')
                 return false;
             }
         }
@@ -19,6 +20,7 @@ const questions = [
             if (descriptionInput) {
                 return true;
             } else {
+                console.log('Please enter a description!')
                 return false;
             }
         }
@@ -27,10 +29,12 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'Describe the installation proccess.',
+        default: 'npm install',
         validate: installInput => {
             if (installInput) {
                 return true;
             } else {
+                console.log('Please enter the installation process!')
                 return false;
             }
         }
@@ -43,6 +47,7 @@ const questions = [
             if (usageInput) {
                 return true;
             } else {
+                console.log('Please enter a usage description!')
                 return false;
             }
         }
@@ -61,6 +66,7 @@ const questions = [
             if (contrinput) {
                 return true;
             } else {
+                console.log('Please enter the contribuition guidelines!')
                 return false;
             }
         }
@@ -73,10 +79,37 @@ const questions = [
             if (testinginput) {
                 return true;
             } else {
+                console.log('Please enter the testing process!')
                 return false;
             }
         }
     },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your GitHub username.',
+        validate: testinginput => {
+            if (testinginput) {
+                return true;
+            } else {
+                console.log('Please enter your GitHub username!')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email;',
+        message: 'To help people contact you please enter your email',
+        validate: testinginput => {
+            if (testinginput) {
+                return true;
+            } else {
+                console.log('Please enter your email!')
+                return false;
+            }
+        }
+    }
 ];
 
 module.exports = questions;

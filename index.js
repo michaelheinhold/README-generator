@@ -9,7 +9,7 @@ const questions = require('./utils/questions');
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), err => {
+    fs.writeFile('./dist/'+fileName, generateMarkdown(data), err => {
         if (err) throw err;
 
         console.log('Success! README created!')

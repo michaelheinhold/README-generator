@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
   } else if (license === 'MIT'){
     return "[!['License: MIT']('https://img.shields.io/badge/License-MIT-yellow.svg')]('https://opensource.org/licenses/MIT')"
   } else {
-    return "[!['License']('https://img.shields.io/badge/License-Apache%202.0-blue.svg')]('https://opensource.org/licenses/Apache-2.0')"
+    return "[!['License: Apache 2.0']('https://img.shields.io/badge/License-Apache%202.0-blue.svg')]('https://opensource.org/licenses/Apache-2.0')"
   }
 }
 
@@ -66,6 +66,10 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Questions
+  Email me at: \\
+  [${data.email}](${data.email})\\
+  Also check out my GitHub profile:\\
+  [${data.github}](https://github.com/${data.github})
 `;
 }
 
