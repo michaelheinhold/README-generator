@@ -99,7 +99,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'email;',
+        name: 'email',
         message: 'To help people contact you please enter your email',
         validate: testinginput => {
             if (testinginput) {
