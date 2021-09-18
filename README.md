@@ -28,6 +28,6 @@
 
   ## Questions
   Email me at: \
-  [undefined](undefined)\
+  [michael.heinhold@gmail.com](michael.heinhold@gmail.com)\
   Also check out my GitHub profile:\
   [michaelheinhold](https://github.com/michaelheinhold)
