@@ -23,7 +23,10 @@
   ### Screenshots and Recordings
   Here you can see what the process will look like in your console:
   ![Screenshot (11)_LI](https://user-images.githubusercontent.com/86388353/133896079-3ac2668f-4107-4e5e-91b5-5925728e5bb3.jpg)
-
+  
+  Here you can see a video that demonstrates the usage of this application:
+  [Demonstration Video](https://drive.google.com/file/d/1mGbAjo3iH4QmNGzAqoGNOQ3Duf2sNlZ0/view)
+  
   ## License
   This application is licensed under the [MIT](https://spdx.org/licenses/MIT.html) license.
   
